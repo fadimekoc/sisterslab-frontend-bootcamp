@@ -1,1 +1,0 @@
-# sisterslab-frontend-bootcamp
