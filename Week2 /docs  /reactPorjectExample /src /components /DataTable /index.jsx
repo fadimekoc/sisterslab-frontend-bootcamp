@@ -1,44 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import PhoneModelTable from './PhoneModelTable';
+import React from 'react'
 
-const App = () => {
-  const phoneData = [
-    {
-      id: 1,
-      brand: "Samsung",
-      model: "Galaxy S21"
-    },
-    {
-      id: 2,
-      brand: "Apple",
-      model: "İphone 13"
-    },
-    {
-      id: 3,
-      brand: "Google",
-      model: "Pixel 6"
-    },
-    {
+function DataTable({ title, data, text, number }) {
+    return (
+        <div style={{margin: "20px"}}>
+            <h2>{title}</h2>
+            <p>{text}</p>
+            <p>Number: {number}</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Brand</th>
+                        <th>Model</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    {data.map(car => (
+                        <tr key={phone.id}>
+                            <td>{phone.id}</td>
+                            <td>{phone.brand}</td>
+                            <td>{phone.model}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+    )
+}
 
-      id: 4,     
-     brand: "OnePlus",
-     model: "Nord N200"
-    }
-  ];
-
-  return (
-  <div>
- <h1>Phone Model Data Table</h1>
- <PhoneModelTable
-  title = "Phone Model Information"
-  text = "List of Phone Models"
-  number = {4 }
-  data={phoneData}
-
-  />
-    </div>
-  );
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
+export default DataTable
