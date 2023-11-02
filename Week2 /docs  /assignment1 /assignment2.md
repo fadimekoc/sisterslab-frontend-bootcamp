@@ -4,4 +4,10 @@ title: "Veri Listesi" data: Bir obje array'i (örneğin, [{ name: 'Alice' }, { n
 
 bu props'ları kullanarak aşağıdaki gibi bir çıktı oluşturun iceriye gondereceginiz propslar karmasik olabilir pokemons gibi bir array olabilir ve aray methodlari ile ciktiyi olusturabilirsiniz
 
-suana kadar gordugumu tum baslica js ozerliklerini kullanabilirsiniz // template literal // array methodlari // object methodlari // destructuring // spread operator //shorthand properties // template literal // array methodlari // object methodlari // destructuring // spread operator //shorthand properties
+suana kadar gordugumu tum baslica js ozerliklerini kullanabilirsiniz // template literal // array methodlari // object methodlari // destructuring // spread operator //shorthand properties
+// template literal
+// array methodlari
+// object methodlari
+// destructuring
+// spread operator
+//shorthand properties
